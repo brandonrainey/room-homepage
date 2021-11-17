@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import arrow from '../public/images/icon-arrow.svg'
+
 
 export default function Home() {
   const [heroImg, setHeroImg] = useState(0)
@@ -17,12 +17,22 @@ export default function Home() {
   }
   return (
     <div className='mainContainer'>
-      <div className={`cell-1 ${changeImg}`}>
-        <div className='navIcon'></div>
-        <div className='title'></div>
+      <div className={`cell-1 ${changeImg()}`}>
+        <div className='navIcon'><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd" />
+          </svg></div>
+        <div className='title'>room</div>
         <div className='heroNav'>
-          <button className='leftButton'></button>
-          <button className='rightButton'></button>
+          <button className='leftButton'>
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fill-rule="evenodd" />
+            </svg>
+          </button>
+          <button className='rightButton'>
+            <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 0l12 12L1 24" stroke="#FFF" fill="none" fill-rule="evenodd" />
+            </svg>
+          </button>
         </div>
       </div>
       <div className='cell-2'>
@@ -41,8 +51,12 @@ export default function Home() {
         
       </div>
       <div className='cell-4'>
-        <div className='subHeader'></div>
-        <div className='description'></div>
+        <div className='subHeader'> ABOUT OUR FURNITURE</div>
+        <div className='description'>Our multifunctional collection blends desgin and
+        function to suit your individual taste. Make each room unique, or pick a cohesive
+        theme that best express your interests and what inspires you. Find the
+        furniture pieces you need, from traditional to contenporary styles or anything
+        in between. Product specialists are available to help you create your dream space.</div>
       </div>
       <div className='cell-5'>
 

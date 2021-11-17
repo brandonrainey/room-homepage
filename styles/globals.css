@@ -16,22 +16,59 @@ body {
 .mainContainer {
   height:100%;
   display: grid;
-  gap: 10px;
   grid-template-columns: 1fr;
   
 }
 
 .cell-1 {
   display: flex;
-  height: 400px;
-  border: 1px solid black;
+  height: 360px;
+  
+  
+}
+
+.title {
+  font-size: 22px;
+  margin-left: 30%;
+  padding-top: 44px;
+  color: white;
+  font-weight: 600;
+}
+
+.navIcon {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.hero-1 {
+  background: url(../public/images/mobile-image-hero-1.jpg);
+}
+
+.heroNav {
+  
+  margin-left: auto;
+  margin-top: auto;
+}
+
+.leftButton {
+  height: 50px;
+  width: 50px;
+  background: black;
+}
+
+.rightButton {
+  height: 50px;
+  width: 50px;
+  background: black;
+  
 }
 
 .cell-2 {
   display: flex;
   flex-direction: column;
   height: 400px;
-  border: 1px solid black;
+  
+  
 }
 
 .mainHeader {
@@ -41,19 +78,26 @@ body {
 
 .cell-3 {
   display: flex;
-  height: 400px;
-  border: 1px solid black;
+  height: 266px;
+  
   background: url(../public/images/image-about-dark.jpg)
 }
 
 .cell-4 {
   display: flex;
+  flex-direction: column;
   height: 400px;
-  border: 1px solid black;
+  
+}
+
+.subHeader {
+  font-size: 16px;
+  font-weight: 700;
 }
 
 .cell-5 {
   display: flex;
-  height: 400px;
-  border: 1px solid black;
+  height: 266px;
+  
+  background: url(../public/images/image-about-light.jpg)
 }
