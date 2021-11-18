@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  height: 100%
+  height: 100%;
+  font-family: 'Spartan';
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Spartan';
+  
   font-size: 12px;
 }
 
@@ -44,36 +46,62 @@ body {
   background: url(../public/images/mobile-image-hero-1.jpg);
 }
 
+.hero-2 {
+  background: url(../public/images/mobile-image-hero-2.jpg);
+}
+
+.hero-3 {
+  background: url(../public/images/mobile-image-hero-3.jpg);
+}
+
 .heroNav {
   
   margin-left: auto;
   margin-top: auto;
 }
 
+.leftArrow {
+  
+}
+
 .leftButton {
   height: 50px;
   width: 50px;
   background: black;
+  border: none;
 }
 
 .rightButton {
   height: 50px;
   width: 50px;
   background: black;
-  
+  border: none;
 }
 
 .cell-2 {
   display: flex;
   flex-direction: column;
   height: 400px;
-  
-  
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
 }
 
 .mainHeader {
   font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.shopButton {
+  letter-spacing: 0.6rem;
   font-weight: 700;
+  height: 50px;
+  margin-top: 50px;
+}
+
+.arrowIcon {
+  margin-left: 30px;
 }
 
 .cell-3 {
@@ -86,13 +114,17 @@ body {
 .cell-4 {
   display: flex;
   flex-direction: column;
-  height: 400px;
-  
+  height: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
 }
 
 .subHeader {
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight:700;
+  letter-spacing: 0.4rem;
+  margin-bottom: 12px;
 }
 
 .cell-5 {
@@ -100,4 +132,9 @@ body {
   height: 266px;
   
   background: url(../public/images/image-about-light.jpg)
+}
+
+.description {
+  color: hsl(0, 0%, 63%);
+  line-height: 1.5;
 }
