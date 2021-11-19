@@ -43,7 +43,8 @@ body {
 }
 
 .hero-1 {
-  background: url(../public/images/mobile-image-hero-1.jpg);
+  background: url(../public/images/mobile-image-hero-1.jpg) no-repeat;
+  background-size: cover;
 }
 
 .hero-2 {
@@ -137,4 +138,34 @@ body {
 .description {
   color: hsl(0, 0%, 63%);
   line-height: 1.5;
+}
+
+.menuContainer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  
+}
+
+.menuBar {
+  display: flex;
+  height: 120px;
+  background: white;
+  
+}
+
+.menuItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+  font-weight: 600;
+  margin-left: 60px;
+  
+}
+
+.closeIcon {
+  align-self: center;
+  margin-left: 30px;
 }

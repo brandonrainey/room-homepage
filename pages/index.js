@@ -1,8 +1,11 @@
 import React, { useState } from 'react'
+import MobileMenu from '../components/MobileMenu'
 
 
 export default function Home() {
   const [heroImg, setHeroImg] = useState(0)
+
+  const [menuToggle, setMenuToggle] = useState(false)
 
 
 
@@ -31,8 +34,13 @@ export default function Home() {
   }
   return (
     <div className='mainContainer'>
+      {menuToggle ? <MobileMenu
+        menuToggle={menuToggle}
+        setMenuToggle={setMenuToggle}
+      /> : ''}
+      
       <div className={`cell-1 ${changeImg()}`}>
-        <div className='navIcon'><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
+        <div className='navIcon' onClick={() => setMenuToggle(true)}><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fill-rule="evenodd" />
           </svg></div>
         <div className='title'>room</div>
