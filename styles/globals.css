@@ -48,22 +48,21 @@ body {
 }
 
 .hero-2 {
-  background: url(../public/images/mobile-image-hero-2.jpg);
+  background: url(../public/images/mobile-image-hero-2.jpg) no-repeat;
+  background-size: cover;
 }
 
 .hero-3 {
-  background: url(../public/images/mobile-image-hero-3.jpg);
+  background: url(../public/images/mobile-image-hero-3.jpg) no-repeat;
+  background-size: cover;
 }
 
-.heroNav {
+.heroNavMobile {
   
   margin-left: auto;
   margin-top: auto;
 }
 
-.leftArrow {
-  
-}
 
 .leftButton {
   height: 50px;
@@ -72,11 +71,19 @@ body {
   border: none;
 }
 
+.leftButton:active {
+  background: gray;
+}
+
 .rightButton {
   height: 50px;
   width: 50px;
   background: black;
   border: none;
+}
+
+.rightButton:active {
+  background: gray;
 }
 
 .cell-2 {
@@ -109,7 +116,8 @@ body {
   display: flex;
   height: 266px;
   
-  background: url(../public/images/image-about-dark.jpg)
+  background: url(../public/images/image-about-dark.jpg) no-repeat;
+  background-size: cover;
 }
 
 .cell-4 {
@@ -132,7 +140,8 @@ body {
   display: flex;
   height: 266px;
   
-  background: url(../public/images/image-about-light.jpg)
+  background: url(../public/images/image-about-light.jpg) no-repeat;
+  background-size: cover;
 }
 
 .description {
@@ -168,4 +177,120 @@ body {
 .closeIcon {
   align-self: center;
   margin-left: 30px;
+}
+
+.desktopMenu {
+  display: none;
+}
+
+.heroNavDesktop {
+  display: none;
+}
+
+@media (min-width: 375px) {
+  .navIcon {
+    display: none;
+  }
+
+  .mainContainer {
+    grid-template-columns: 1.2fr 2fr 0.3fr 1.2fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+    
+  }
+
+  .cell-1 {
+   height: 100%;
+   grid-column: 1/3;
+   grid-row: 1/2;
+  }
+
+  .cell-2 {
+    grid-column: 3/5;
+    align-self: center;
+    padding-left: 17%;
+    padding-right: 17%;
+    position: relative;
+    height: 100%;
+  }
+
+  .cell-3 {
+    height: 100%;
+  }
+
+  .cell-4 {
+   grid-column: 2/4;
+   padding-left: 6%;
+   padding-right: 6%;
+  }
+
+  .cell-5 {
+    height: 100%;
+  }
+
+  .hero-1 {
+    background: url(../public/images/desktop-image-hero-1.jpg) no-repeat;
+    background-size:100% 100%;
+
+  }
+
+  .hero-2 {
+    background: url(../public/images/desktop-image-hero-2.jpg) no-repeat;
+    background-size:100% 100%;
+
+  }
+
+  .hero-3 {
+    background: url(../public/images/desktop-image-hero-3.jpg) no-repeat;
+    background-size:100% 100%;
+
+  }
+
+  .title {
+    margin-left: 5%;
+    font-size: 30px;
+  }
+
+  .desktopMenu {
+    display: flex;
+    justify-content: space-between;
+    width: 24%;
+    color: white;
+    padding-top: 53px;
+    margin-left: 6%;
+    
+  }
+
+  .desktopMenuItem {
+    font-size: 16px;
+  }
+
+  .mainHeader {
+    font-size: 36px;
+  }
+
+  .heroNavMobile {
+    display: none;
+  }
+
+  .heroNavDesktop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  .leftButton {
+    height: 75px;
+    width: 75px;
+  }
+
+  .rightButton {
+    height: 75px;
+    width: 75px;
+  }
+
+  .shopButton {
+    letter-spacing: 0.8rem;
+    
+  }
 }
