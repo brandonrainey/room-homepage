@@ -71,7 +71,7 @@ export default function Home() {
         <div className='heroNavMobile'>
           <button className='leftButton' onClick={() => leftClick()}>
             <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 -10 10 40">
-              <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fillRrule="evenodd" />
+              <path d="M13 0L1 12l12 12" stroke="#FFF" fill="none" fillRule="evenodd" />
             </svg>
           </button>
           <button className='rightButton' onClick={() => rightClick()}>
