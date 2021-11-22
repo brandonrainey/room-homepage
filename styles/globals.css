@@ -187,7 +187,7 @@ body {
   display: none;
 }
 
-@media (min-width: 375px) {
+@media (min-width: 425px) {
   .navIcon {
     display: none;
   }
