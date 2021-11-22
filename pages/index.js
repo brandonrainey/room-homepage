@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import DesktopMenu from '../components/DesktopMenu'
 import MobileMenu from '../components/MobileMenu'
+import hero1 from '../public/images/desktop-image-hero-1.jpg'
 
 
 export default function Home() {
@@ -62,7 +63,7 @@ export default function Home() {
         setMenuToggle={setMenuToggle}
       /> : ''}
       
-      <div className={`cell-1 ${textData[heroImg].img}`}>
+      <div className={`cell-1 ${textData[heroImg].img}`} >
         <div className='navIcon' onClick={() => setMenuToggle(true)}><svg width="20" height="14" xmlns="http://www.w3.org/2000/svg">
           <path d="M20 12v2H0v-2h20zm0-6v2H0V6h20zm0-6v2H0V0h20z" fill="#FFF" fillRule="evenodd" />
           </svg></div>
