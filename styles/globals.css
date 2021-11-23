@@ -106,6 +106,7 @@ body {
   font-weight: 700;
   height: 50px;
   margin-top: 50px;
+  cursor: pointer;
 }
 
 .arrowIcon {
@@ -263,6 +264,7 @@ body {
 
   .desktopMenuItem {
     font-size: 16px;
+    cursor: pointer;
   }
 
   .mainHeader {
@@ -278,20 +280,61 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+    
   }
 
   .leftButton {
     height: 75px;
     width: 75px;
+    cursor: pointer;
   }
 
   .rightButton {
     height: 75px;
     width: 75px;
+    cursor: pointer;
   }
 
   .shopButton {
     letter-spacing: 0.8rem;
     
+  }
+
+  .navWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .homeSelected {
+    opacity: 1;
+    height: 3px;
+   width: 4rem;
+   position: relative;
+   background: white;
+  }
+
+  .shopSelected {
+    opacity: 1;
+    height: 3px;
+   width: 3.5rem;
+   position: relative;
+   background: white;
+  }
+
+  .aboutSelected {
+    opacity: 1;
+    height: 3px;
+   width: 4.2rem;
+   position: relative;
+   background: white;
+  }
+
+  .contactSelected {
+    opacity: 1;
+    height: 3px;
+   width: 5.3rem;
+   position: relative;
+   background: white;
   }
 }
