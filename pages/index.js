@@ -100,7 +100,7 @@ export default function Home() {
       <section className="cell-2">
         <header className="mainHeader">{textData[heroImg].title}</header>
         <p className="description">{textData[heroImg].description}</p>
-        <a className="shopButton">
+        <a className="shopButton" href=''>
           SHOP NOW
           <span>
             <svg
