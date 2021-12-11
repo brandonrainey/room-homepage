@@ -100,7 +100,7 @@ export default function Home() {
       <section className="cell-2">
         <header className="mainHeader">{textData[heroImg].title}</header>
         <p className="description">{textData[heroImg].description}</p>
-        <a className="shopButton" href=''>
+        <a className="shopButton" href='https://the-room-homepage.netlify.app/'>
           SHOP NOW
           <span>
             <svg
