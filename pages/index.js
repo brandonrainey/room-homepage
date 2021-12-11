@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DesktopMenu from "../components/DesktopMenu";
 import MobileMenu from "../components/MobileMenu";
+import Head from "next/head"
 
 export default function Home() {
   const [heroImg, setHeroImg] = useState(0);
@@ -41,6 +42,10 @@ export default function Home() {
   }
   return (
     <div className="mainContainer">
+      <Head>
+        <meta name="description" content="Room homepage."/>
+        <title>room Homepage</title>
+      </Head>
       {menuToggle ? (
         <MobileMenu menuToggle={menuToggle} setMenuToggle={setMenuToggle} />
       ) : (
@@ -60,7 +65,7 @@ export default function Home() {
         <div className="title">room</div>
         <DesktopMenu />
         <div className="heroNavMobile">
-          <button className="leftButton" onClick={() => leftClick()}>
+          <button className="leftButton" aria-label="left nav" onClick={() => leftClick()}>
             <svg
               width="14"
               height="24"
@@ -75,7 +80,7 @@ export default function Home() {
               />
             </svg>
           </button>
-          <button className="rightButton" onClick={() => rightClick()}>
+          <button className="rightButton" aria-label="right nav" onClick={() => rightClick()}>
             <svg
               width="14"
               height="24"
@@ -113,7 +118,7 @@ export default function Home() {
           </span>
         </a>
         <div className="heroNavDesktop">
-          <button className="leftButton" onClick={() => leftClick()}>
+          <button className="leftButton" aria-label="left nav" onClick={() => leftClick()}>
             <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13 0L1 12l12 12"
@@ -123,7 +128,7 @@ export default function Home() {
               />
             </svg>
           </button>
-          <button className="rightButton" onClick={() => rightClick()}>
+          <button className="rightButton" aria-label="right nav" onClick={() => rightClick()}>
             <svg width="14" height="24" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M1 0l12 12L1 24"
