@@ -38,25 +38,25 @@ export default function DesktopMenu() {
   return (
     <nav className="desktopMenu">
       <div className="navWrapper">
-        <a className="desktopMenuItem" onClick={handleHomeClick} href='/'>
+        <a className="desktopMenuItem" onClick={handleHomeClick} href='https://the-room-homepage.netlify.app/'>
           home
         </a>
         <div className={`${navItem === 0 ? "homeSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
-        <a className="desktopMenuItem" onClick={handleShopClick} href='/'>
+        <a className="desktopMenuItem" onClick={handleShopClick} href='https://the-room-homepage.netlify.app/'>
           shop
         </a>
         <div className={`${navItem === 1 ? "shopSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
-        <a className="desktopMenuItem" onClick={handleAboutClick} href='/'>
+        <a className="desktopMenuItem" onClick={handleAboutClick} href='https://the-room-homepage.netlify.app/'>
           about
         </a>
         <div className={`${navItem === 2 ? "aboutSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
-        <a className="desktopMenuItem" onClick={handleContactClick} href='/'>
+        <a className="desktopMenuItem" onClick={handleContactClick} href='https://the-room-homepage.netlify.app/'>
           contact
         </a>
         <div className={`${navItem === 3 ? "contactSelected" : ""}`}></div>
