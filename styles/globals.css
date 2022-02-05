@@ -323,3 +323,11 @@ body {
     background: white;
   }
 }
+
+a {
+  color: inherit
+}
+
+a:visited {
+  color: black;
+}
