@@ -324,10 +324,18 @@ body {
   }
 }
 
-a {
+.shopButton {
   color: inherit
 }
 
-a:visited {
+.shopButton:visited {
   color: black;
+}
+
+.desktopMenuItem {
+  text-decoration: none;
+}
+
+.desktopMenuItem:visited {
+  color: inherit;
 }

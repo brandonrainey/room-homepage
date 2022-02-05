@@ -38,25 +38,25 @@ export default function DesktopMenu() {
   return (
     <nav className="desktopMenu">
       <div className="navWrapper">
-        <a className="desktopMenuItem" onClick={handleHomeClick}>
+        <a className="desktopMenuItem" onClick={handleHomeClick} href='/'>
           home
         </a>
         <div className={`${navItem === 0 ? "homeSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
-        <a className="desktopMenuItem" onClick={handleShopClick}>
+        <a className="desktopMenuItem" onClick={handleShopClick} href='/'>
           shop
         </a>
         <div className={`${navItem === 1 ? "shopSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
-        <a className="desktopMenuItem" onClick={handleAboutClick}>
+        <a className="desktopMenuItem" onClick={handleAboutClick} href='/'>
           about
         </a>
         <div className={`${navItem === 2 ? "aboutSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
-        <a className="desktopMenuItem" onClick={handleContactClick}>
+        <a className="desktopMenuItem" onClick={handleContactClick} href='/'>
           contact
         </a>
         <div className={`${navItem === 3 ? "contactSelected" : ""}`}></div>
