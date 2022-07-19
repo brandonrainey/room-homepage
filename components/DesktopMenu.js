@@ -39,25 +39,25 @@ export default function DesktopMenu() {
     <nav className="desktopMenu">
       <div className="navWrapper">
         <a className="desktopMenuItem" onClick={handleHomeClick} href='https://the-room-homepage.netlify.app/'>
-          this
+          Home-Mac
         </a>
         <div className={`${navItem === 0 ? "homeSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
         <a className="desktopMenuItem" onClick={handleShopClick} href='https://the-room-homepage.netlify.app/'>
-          is
+          About-Mac
         </a>
         <div className={`${navItem === 1 ? "shopSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
         <a className="desktopMenuItem" onClick={handleAboutClick} href='https://the-room-homepage.netlify.app/'>
-          a
+          Shop-Mac
         </a>
         <div className={`${navItem === 2 ? "aboutSelected" : ""}`}></div>
       </div>
       <div className="navWrapper">
         <a className="desktopMenuItem" onClick={handleContactClick} href='https://the-room-homepage.netlify.app/'>
-          test
+          Contact-Mac
         </a>
         <div className={`${navItem === 3 ? "contactSelected" : ""}`}></div>
       </div>

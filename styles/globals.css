@@ -88,6 +88,7 @@ body {
   padding-left: 30px;
   padding-right: 30px;
   justify-content: center;
+  
 }
 
 .mainHeader {
@@ -102,6 +103,7 @@ body {
   height: 50px;
   margin-top: 50px;
   cursor: pointer;
+  
 }
 
 .arrowIcon {
@@ -180,6 +182,8 @@ body {
   display: none;
 }
 
+
+
 @media (min-width: 425px) {
   .navIcon {
     display: none;
@@ -204,6 +208,7 @@ body {
     padding-right: 17%;
     position: relative;
     height: 100%;
+    
   }
 
   .cell-3 {
@@ -283,6 +288,7 @@ body {
 
   .shopButton {
     letter-spacing: 0.8rem;
+    align-self: flex-end;
   }
 
   .navWrapper {
